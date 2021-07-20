@@ -1,0 +1,77 @@
+/* Tags */
+body {
+  font-family: "Montserrat", sans-serif;
+}
+h1 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  font-size: 3.5rem;
+  line-height: 1.2;
+}
+
+/* class */
+.pt-2 {
+  padding-top: 5rem !important;
+}
+.container-fluid {
+  padding: 2% 15%;
+  padding-bottom: 8%;
+  overflow: hidden;
+}
+
+.navbar {
+  padding-bottom: 4rem;
+  padding-left: 0;
+}
+
+.nav-item {
+  padding: 0 18px;
+}
+.nav-link {
+  font-family: "Montserrat-light", sans-serif;
+  font-size: 20px;
+}
+.navbar-brand {
+  font-size: 2.7rem;
+  font-family: "Ubuntu", sans-serif;
+}
+.icon-design {
+  color: #ef8172;
+  font-size: 3.5rem;
+  padding-bottom: 1.5rem;
+}
+
+.icon-design:hover {
+  color: #ff4c68;
+}
+/* icon and text alignment */
+.col-md-4 {
+  text-align: center;
+}
+/* subtext designs */
+.fea-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.sub-text {
+  color: #8f8f8f;
+}
+/* Download button */
+.buttons {
+  margin: 7% 5% 2% 0;
+}
+
+/* iphone image */
+.title-image {
+  width: 60%;
+  transform: rotate(26deg);
+  position: absolute;
+  top: 30px;
+  left: 60px;
+}
+
+/*id's*/
+#title {
+  background-color: #ff4c68;
+  color: azure;
+}
