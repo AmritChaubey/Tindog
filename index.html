@@ -28,6 +28,34 @@
   </head>
 
   <body>
+    <!-- the popup message -->
+    <div
+      class="modal fade"
+      id="popup"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">
+              So here's the thing
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body" style="text-align: center">
+            The app is still in developing phase<br />
+            It will be active soon.
+          </div>
+        </div>
+      </div>
+    </div>
     <section id="title">
       <!-- Nav Bar -->
       <div class="container-fluid">
@@ -46,24 +74,34 @@
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <div class="navbar-nav ms-auto">
-              <a class="nav-link nav-content" href="#">Contact</a>
-              <a class="nav-link nav-content" href="#">Pricing</a>
-              <a class="nav-link nav-content" href="#">Download</a>
+              <a class="nav-link nav-content" href="#footer">Contact</a>
+              <a class="nav-link nav-content" href="#pricing">Pricing</a>
+              <a class="nav-link nav-content" href="#cta">Download</a>
             </div>
           </div>
         </nav>
         <!-- title -->
         <div class="row">
           <div class="col-md-6" style="z-index: 1">
-            <h1>Meet new and interesting dogs nearby.</h1>
-            <button type="button" class="btn btn-outline-light btn-lg buttons">
+            <h1 class="main-heading">Meet new and interesting dogs nearby.</h1>
+            <button
+              type="button"
+              class="btn btn-outline-light btn-lg buttons"
+              data-bs-toggle="modal"
+              data-bs-target="#popup"
+            >
               <i class="fab fa-google-play"></i> Download
             </button>
-            <button type="button" class="btn btn-dark btn-lg buttons">
+            <button
+              type="button"
+              class="btn btn-dark btn-lg buttons"
+              data-bs-toggle="modal"
+              data-bs-target="#popup"
+            >
               <i class="fab fa-apple"></i> Download
             </button>
           </div>
-          <div class="col-md-6" style="z-index: 0">
+          <div class="col-md-6">
             <img
               class="title-image"
               src="images/iphone6.png"
@@ -110,7 +148,7 @@
       >
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <h2>
+            <h2 class="main-content">
               I no longer have to sniff other dogs for love. I've found the
               hottest Corgi on TinDog. Woof.
             </h2>
@@ -122,7 +160,7 @@
             <em>Bangalore, Tommy</em>
           </div>
           <div class="carousel-item">
-            <h2 class="testimonial-text">
+            <h2 class="main-content">
               My dog used to be so lonely, but with TinDog's help, they've found
               the love of their life. I think.
             </h2>
@@ -134,7 +172,7 @@
             <em>Nepal, Aadit</em>
           </div>
           <div class="carousel-item">
-            <h2>
+            <h2 class="main-content">
               My dog met his best bud thanks to Tindog, they are so cute when
               they play together.
             </h2>
@@ -146,7 +184,7 @@
             <em>Seoul, Miss BTS</em>
           </div>
           <div class="carousel-item">
-            <h2 style="font-size: 2.2rem !important">
+            <h2 class="testimonial-text-2">
               We live in a city, so it hard for my dog to find new friends but
               with help of tindog he has not one but 3 new friend and we gather
               at park for them to play.
@@ -196,64 +234,98 @@
     <!-- Pricing -->
 
     <section id="pricing">
-      <h2>A Plan for Every Dog's Needs</h2>
+      <h2 class="main-content">A Plan for Every Dog's Needs</h2>
       <p>Simple and affordable price plans for your and your dog.</p>
       <div class="row">
         <div class="col-12 col-md-4 col-sm-6 py-2">
           <div class="card h-100">
             <div class="card-body">
-              <h3 class="card-title">Chihuahua</h3>
+              <h3 class="card-title main-text">Chihuahua</h3>
               <h2>Free</h2>
               <p>5 Matches Per Day</p>
               <p>10 Messages Per Day</p>
               <p>Unlimited App Usage</p>
-              <button class="btn btn-outline-dark btn-lg col-12 p-button mt-5" type="button">Sign Up</button>
+              <button
+                class="btn btn-outline-dark btn-lg col-12 p-button mt-5"
+                type="button"
+              >
+                Sign Up
+              </button>
             </div>
           </div>
         </div>
         <div class="col-12 col-md-4 col-sm-6 py-2">
           <div class="card h-100">
             <div class="card-body">
-              <h3 class="card-title">Labrador</h3>
+              <h3 class="card-title main-text">Labrador</h3>
               <h2>Rs.200/mo</h2>
               <p>Unlimited Matches</p>
               <p>Unlimited Messages</p>
               <p>Unlimited App Usage</p>
-              <button class="btn btn-dark btn-lg col-12 p-button mt-5" type="button">Sign Up</button>
+              <button
+                class="btn btn-dark btn-lg col-12 p-button mt-5"
+                type="button"
+              >
+                Sign Up
+              </button>
             </div>
           </div>
         </div>
         <div class="col-12 col-md-4 col-sm-12 py-2">
           <div class="card h-100">
             <div class="card-body">
-              <h3 class="card-title"><h3>Mastiff</h3>
+              <h3 class="card-title main-text">Mastiff</h3>
               <h2>Rs.500/mo</h2>
               <p>Pirority Listing</p>
               <p>Unlimited Matches</p>
               <p>Unlimited Messages</p>
               <p>Unlimited App Usage</p>
-              <button type="button" class="btn btn-dark btn-lg col-12 P-button">Sign Up</button>
+              <button type="button" class="btn btn-dark btn-lg col-12 P-button">
+                Sign Up
+              </button>
             </div>
           </div>
         </div>
       </div>
-      
-      
-      
     </section>
 
     <!-- Call to Action -->
 
     <section id="cta">
-      <h3>Find the True Love of Your Dog's Life Today.</h3>
-      <button type="button">Download</button>
-      <button type="button">Download</button>
+      <h3 class="cta-heading">Find the True Love of Your Dog's Life Today.</h3>
+      <button
+        type="button"
+        class="btn btn-outline-light btn-lg buttons"
+        data-bs-toggle="modal"
+        data-bs-target="#popup"
+      >
+        <i class="fab fa-google-play"></i> Download
+      </button>
+      <button
+        type="button"
+        class="btn btn-dark btn-lg buttons"
+        data-bs-toggle="modal"
+        data-bs-target="#popup"
+      >
+        <i class="fab fa-apple"></i> Download
+      </button>
     </section>
 
     <!-- Footer -->
 
     <footer id="footer">
-      <p>© Copyright 2018 TinDog</p>
+      <a href="https://www.instagram.com/amrit.chaubey.144/"
+        ><i class="footer-icon fab fa-instagram"></i
+      ></a>
+      <a href="https://twitter.com/AmritKumarCha17"
+        ><i class="footer-icon fab fa-twitter"></i
+      ></a>
+      <a href="https://github.com/AmritChaubey"
+        ><i class="footer-icon fab fa-github"></i
+      ></a>
+      <a href=""><i class="footer-icon fab fa-facebook-f"></i></a>
+      <a href=""><i class="footer-icon far fa-envelope"></i></a>
+      <p style="font-size: 10px; color: grey">© Copyright 2021 TinDog</p>
     </footer>
   </body>
 </html>
